@@ -1,0 +1,10 @@
+spring:
+  freemarker:
+    check-template-location : false
+    cache: false
+    charset : UTF-8
+    templateEncoding : UTF-8
+    expose-spring-macro-helpers : true
+    setting :
+      template_update_delay : 0
+      default_encoding : UTF-8
