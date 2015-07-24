@@ -22,7 +22,7 @@ public class ContentListTag implements TemplateDirectiveModel {
     @Override
     public void execute(Environment env, Map map, TemplateModel[] templateModels, TemplateDirectiveBody body) throws TemplateException, IOException {
         List<Map<String, String>> userList = userService.userList();
-        env.setVariable("contents", ObjectWrapper.DEFAULT_WRAPPER.wrap(userList));
+        env.setVariable("contents", new DefaultObjectWrapperBuilder(Configuration.VERSION_2_3_22).build().wrap(userList));
         if(body != null){
             body.render(env.getOut());
         }
