@@ -10,7 +10,8 @@
 <@test></@test>
 <#list contents as content>
     ${content.name} ---- ${content.eamil}<br/>
+    <hr>
 </#list>
-
+<img src="res/images/logo.png">
 </body>
 </html>
