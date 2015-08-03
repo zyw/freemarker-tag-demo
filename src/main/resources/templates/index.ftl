@@ -7,7 +7,7 @@
 <>
 <h1>ddddddddddddddddddddddd${name}---${email}</h1>
 
-<@test></@test>
+<@custom.test></@custom.test>
 <#list contents as content>
     ${content.name} ---- ${content.eamil}<br/>
     <hr>

@@ -15,10 +15,10 @@ public class FreeMarkerConfig {
     private freemarker.template.Configuration configuration;
 
     @Autowired
-    private ContentListTag contentListTag;
+    private CustomTags customTags;
 
     @PostConstruct
     public void setSharedVariable(){
-        configuration.setSharedVariable("test",contentListTag);
+        configuration.setSharedVariable("custom",customTags);
     }
 }
