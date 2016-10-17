@@ -8,7 +8,7 @@ spring:
     setting :
       template_update_delay : 0
       default_encoding : UTF-8
-logging:
-  config : logback.xml
-  level :
-  org.springframework : DEBUG
+#logging:
+#  config : logback.xml
+#  level :
+#  org.springframework : DEBUG

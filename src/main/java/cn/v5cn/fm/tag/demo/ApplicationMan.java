@@ -1,7 +1,9 @@
 package cn.v5cn.fm.tag.demo;
 
+import cn.v5cn.fm.tag.demo.util.SpringContextUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 /**
  * Created by ZXF-PC1 on 2015/7/23.
@@ -10,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ApplicationMan {
     public static void main(String[] args) {
-        SpringApplication.run(ApplicationMan.class,args);
+        ApplicationContext applicationContext = SpringApplication.run(ApplicationMan.class,args);
+        SpringContextUtil.setApplicationContext(applicationContext);
     }
 }

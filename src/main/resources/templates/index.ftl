@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
-<>
 <h1>ddddddddddddddddddddddd${name}---${email}</h1>
 
 <@custom.test></@custom.test>
@@ -297,10 +296,8 @@ Order by weight:
 
 
 <hr/>
-<#assign x = "    moo  \n\n   ">
 (<#compress>
 1 2  3   4    5
-${moo}
 test only
 
 I said, test only
